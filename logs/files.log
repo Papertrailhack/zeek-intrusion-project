@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2025-06-01-09-37-50
+#fields	ts	fuid	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	time	string	string	addr	port	addr	port	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+1748757364.685119	Fjk2T3oSKKva2JKB7	Cy61oe4XkWiKShBLlj	10.0.2.4	49805	151.101.198.172	80	HTTP	0	(empty)	application/chrome-ext	-	0.141261	F	F	1004603	1093663	89060	0	F	-	-	-	-	-	-	-
+1748757368.938059	Fxgp992ysZesZqklb8	CveGrj4Vh9BptzpBCf	10.0.2.4	49807	150.171.27.11	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1858	-	0	0	F	-	-	-	-	-	-	-
+1748757410.855425	FYLAA5wiDHqxbeVs8	CzfGGetSzCBEushBj	10.0.2.4	49809	217.20.51.79	80	HTTP	0	(empty)	application/chrome-ext	-	1.355788	F	F	1674025	1674025	0	0	F	-	-	-	-	-	-	-
+1748757432.185160	Fxwuhv6afhOD0ZeY1	CjT0kV2ZuRYNNTTb3i	10.0.2.4	49811	52.123.129.14	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1858	-	0	0	F	-	-	-	-	-	-	-
+1748757732.596449	Fcc7pt4NB7VIaO373c	CULmIu3b83L8vdTw8	10.0.2.4	49814	52.123.129.14	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1858	-	0	0	F	-	-	-	-	-	-	-
+#close	2025-06-01-09-37-50

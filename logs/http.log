@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	http
+#open	2025-06-01-09-37-50
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
+#types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
+1748757364.519463	CVmnaZ1puilH3TZOG	10.0.2.4	49804	151.101.198.172	80	1	HEAD	msedge.b.tlu.dl.delivery.mp.microsoft.com	/filestreamingservice/files/68591036-2289-4858-9f7f-9149e89c8a08?P1=1748971661&P2=404&P3=2&P4=XMrWQjO9Ia7dDYrz9SXqedA618aqH+P+emnHA5HVoUAadvIlbKFofrdY6dGxOBqT+MRFqtCw4PpId9b7EDhZ+g==	-	1.1	Microsoft BITS/7.8	-	0	0	200	OK	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1748757364.659840	Cy61oe4XkWiKShBLlj	10.0.2.4	49805	151.101.198.172	80	1	GET	msedge.b.tlu.dl.delivery.mp.microsoft.com	/filestreamingservice/files/68591036-2289-4858-9f7f-9149e89c8a08?P1=1748971661&P2=404&P3=2&P4=XMrWQjO9Ia7dDYrz9SXqedA618aqH+P+emnHA5HVoUAadvIlbKFofrdY6dGxOBqT+MRFqtCw4PpId9b7EDhZ+g==	-	1.1	Microsoft BITS/7.8	-	0	1093663	200	OK	-	-	(empty)	-	-	-	-	-	-	Fjk2T3oSKKva2JKB7	-	application/chrome-ext
+1748757410.609369	Cl00Z42ictWxxme0oi	10.0.2.4	49808	217.20.51.79	80	1	HEAD	msedge.b.tlu.dl.delivery.mp.microsoft.com	/filestreamingservice/files/9530bc3d-28ec-4dca-8d8d-874a68b1b861?P1=1748971661&P2=404&P3=2&P4=S6ACNGcp5Xjz6paRGfakAEx6hee0+3oJ3qRRzhtQMPtD54P9GBPrxrDQmeSUIdwZqK5LbHDiPVIAAhXh0/W3pg==	-	1.1	Microsoft BITS/7.8	-	0	0	200	OK	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1748757410.806502	CzfGGetSzCBEushBj	10.0.2.4	49809	217.20.51.79	80	1	GET	msedge.b.tlu.dl.delivery.mp.microsoft.com	/filestreamingservice/files/9530bc3d-28ec-4dca-8d8d-874a68b1b861?P1=1748971661&P2=404&P3=2&P4=S6ACNGcp5Xjz6paRGfakAEx6hee0+3oJ3qRRzhtQMPtD54P9GBPrxrDQmeSUIdwZqK5LbHDiPVIAAhXh0/W3pg==	-	1.1	Microsoft BITS/7.8	-	0	1674025	200	OK	-	-	(empty)	-	-	-	-	-	-	FYLAA5wiDHqxbeVs8	-	application/chrome-ext
+#close	2025-06-01-09-37-50

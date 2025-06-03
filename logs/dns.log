@@ -1,0 +1,31 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2025-06-01-09-37-50
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1748757364.482396	CrT1m91deTCWQUbOU9	10.0.2.4	50422	68.105.28.11	53	udp	21565	0.013358	msedge.b.tlu.dl.delivery.mp.microsoft.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	star.b.tlu.dl.delivery.mp.microsoft.com.delivery.microsoft.com,cdp-f-tlu-net.trafficmanager.net,fg.microsoft.map.fastly.net,151.101.198.172	3232.000000,13948.000000,194.000000,31.000000	F
+1748757410.542616	CuOirJcXFgUL8bmTh	10.0.2.4	60267	68.105.28.11	53	udp	6758	0.014010	msedge.b.tlu.dl.delivery.mp.microsoft.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	star.b.tlu.dl.delivery.mp.microsoft.com.delivery.microsoft.com,cdp-f-tlu-net.trafficmanager.net,edge.ds-c7114-microsoft.global.dns.qwilted-cds.cqloud.com,217.20.51.79,217.20.51.40,217.20.51.35,217.20.51.42,217.20.51.81,217.20.51.25,217.20.51.113,217.20.51.23	739.000000,11390.000000,128.000000,14.000000,14.000000,14.000000,14.000000,14.000000,14.000000,14.000000,14.000000	F
+1748757456.739737	COhed84vGmkfQVoL45	10.0.2.4	55318	68.105.28.11	53	udp	9182	0.015711	settings-win.data.microsoft.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	atm-settingsfe-prod-geo2.trafficmanager.net,settings-prod-sea-1.southeastasia.cloudapp.azure.com,20.44.239.154	490.000000,38.000000,6.000000	F
+1748757459.706708	CWronO3HpPkuehHhal	10.0.2.4	58268	68.105.28.11	53	udp	11464	0.015465	v10.events.data.microsoft.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	win-global-asimov-leafs-events-data.trafficmanager.net,onedscolprdcus18.centralus.cloudapp.azure.com,13.89.179.14	96.000000,35.000000,3.000000	F
+1748757632.369042	CffGi51yKkzVhTBIyk	10.0.2.4	5353	224.0.0.251	5353	udp	0	0.005557	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.371231	Cir7JR11hUruoXiSxb	fe80::61ab:cf80:c316:c85c	5353	ff02::fb	5353	udp	0	0.004123	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.378826	CffGi51yKkzVhTBIyk	10.0.2.4	5353	224.0.0.251	5353	udp	0	0.003660	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.380572	Cir7JR11hUruoXiSxb	fe80::61ab:cf80:c316:c85c	5353	ff02::fb	5353	udp	0	0.002800	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.458497	CffGi51yKkzVhTBIyk	10.0.2.4	5353	224.0.0.251	5353	udp	0	0.000698	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.458873	Cir7JR11hUruoXiSxb	fe80::61ab:cf80:c316:c85c	5353	ff02::fb	5353	udp	0	0.000738	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.460956	CffGi51yKkzVhTBIyk	10.0.2.4	5353	224.0.0.251	5353	udp	0	0.000944	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.461534	Cir7JR11hUruoXiSxb	fe80::61ab:cf80:c316:c85c	5353	ff02::fb	5353	udp	0	0.000730	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757633.607401	CffGi51yKkzVhTBIyk	10.0.2.4	5353	224.0.0.251	5353	udp	0	0.001584	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757633.611059	Cir7JR11hUruoXiSxb	fe80::61ab:cf80:c316:c85c	5353	ff02::fb	5353	udp	0	0.001187	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757633.616729	CffGi51yKkzVhTBIyk	10.0.2.4	5353	224.0.0.251	5353	udp	0	0.001817	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757633.618892	Cir7JR11hUruoXiSxb	fe80::61ab:cf80:c316:c85c	5353	ff02::fb	5353	udp	0	0.001902	desktop-fifqijb.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	fe80::61ab:cf80:c316:c85c,10.0.2.4	60.000000,60.000000	F
+1748757632.375853	CTLzhM3um474RiWR2d	fe80::61ab:cf80:c316:c85c	59341	ff02::1:3	5355	udp	32384	-	desktop-fifqijb	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1748757632.377119	C59IO21D1IiA6I45ak	10.0.2.4	59341	224.0.0.252	5355	udp	32384	-	desktop-fifqijb	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1748757632.460070	CJm3P92JAzW0bHuNCb	fe80::61ab:cf80:c316:c85c	59971	ff02::1:3	5355	udp	40595	-	desktop-fifqijb	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1748757632.460498	CiPEwC3Vx0l1hBawr8	10.0.2.4	59971	224.0.0.252	5355	udp	40595	-	desktop-fifqijb	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1748757633.613889	CA2ganYJAhsRy8mqb	fe80::61ab:cf80:c316:c85c	64378	ff02::1:3	5355	udp	12688	-	desktop-fifqijb	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1748757633.614809	C47EXV37OknTrsQWN8	10.0.2.4	64378	224.0.0.252	5355	udp	12688	-	desktop-fifqijb	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+#close	2025-06-01-09-37-50

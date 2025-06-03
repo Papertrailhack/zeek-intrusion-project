@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ssl
+#open	2025-06-01-09-37-50
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	ssl_history	cert_chain_fps	client_cert_chain_fps	sni_matches_cert
+#types	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	string	vector[string]	vector[string]	bool
+1748757368.809030	CmwE5F2ElYX1uOEnBj	10.0.2.4	49806	68.105.28.11	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	doh.cox.net	F	-	-	T	CsiI	-	-	-
+1748757368.916869	CveGrj4Vh9BptzpBCf	10.0.2.4	49807	150.171.27.11	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp384r1	edge.microsoft.com	F	-	h2	T	CsxuknGIti	b734d1dbf1d221ddd86d60d48aa034dd9b64c94dca1e4cb9d757ff2bd6cf13ac,511c1c41cb7eb2a10078c32c82f17925ba786de46c633921d038e7409e15a5ea	(empty)	T
+1748757414.956271	C0DjE32G2FDtXz1Gnl	10.0.2.4	49810	150.171.27.11	443	-	-	-	edge.microsoft.com	F	-	-	F	C	-	-	-
+1748757432.163386	CjT0kV2ZuRYNNTTb3i	10.0.2.4	49811	52.123.129.14	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp384r1	ecs.office.com	F	-	-	T	CsxuknGIti	b88c95bf21b022a4014b3faefc25e30367b17d9552dbb576e4b4ae756f0141ab,724247794951c93f3e41711617e95ce143263e3196c345a1da78f6639749ec03	(empty)	T
+1748757457.082203	CjFH0l4qSKsHx6XNui	10.0.2.4	49812	20.44.239.154	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp384r1	settings-win.data.microsoft.com	F	-	-	T	CsxknGIi	b133a24c294c025d1f20f47f9d380ba0b74936c415d3654facfb62dc7bde31d6,83688f2aef71386e0936c4b3013b07e8e0c796d8427716dd48b2a63d79509129	(empty)	T
+1748757459.793304	CZX8033jz6hoF7Oyh6	10.0.2.4	49813	13.89.179.14	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp384r1	v10.events.data.microsoft.com	F	-	h2	T	CsxknGIi	5d5409cf7e4f1fa93801cc01ff839516f79699cebc3130c4896ef51b170db2f2,83688f2aef71386e0936c4b3013b07e8e0c796d8427716dd48b2a63d79509129	(empty)	T
+1748757732.573201	CULmIu3b83L8vdTw8	10.0.2.4	49814	52.123.129.14	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp384r1	ecs.office.com	F	-	-	T	CsxuknGIti	b88c95bf21b022a4014b3faefc25e30367b17d9552dbb576e4b4ae756f0141ab,724247794951c93f3e41711617e95ce143263e3196c345a1da78f6639749ec03	(empty)	T
+#close	2025-06-01-09-37-50
