@@ -44,21 +44,6 @@ Key observation: FTP credentials were visible in cleartext.
 | MITRE ATT&CK Mapping  | T1078 – Valid Accounts                                        |
 | Risk Impact           | Attackers could intercept credentials on flat networks       |
 
-## 📁 Repository Structure
-
-.
-├── docs/
-│ ├── final_zeek_intrusion_report.pdf # Technical report
-│ └── README.md # This file
-├── pcaps/
-│ ├── ftp_test.pcap
-│ ├── ftp_attack.pcap
-│ └── ...
-├── logs/
-│ ├── conn.log
-│ ├── dns.log
-│ ├── ssl.log
-│ └── ...
 
 
 ## ✅ Outcomes
