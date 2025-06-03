@@ -1,49 +1,84 @@
 # Zeek Intrusion Detection Project
 
 **Author**: Brett Banks  
-**Environment**: Kali Linux (Attacker) & Windows 10 (Victim)  
 **Date**: June 1, 2025  
+**Environment**: Kali Linux (Attacker) & Windows 10 (Victim)  
 **Tools Used**: Zeek, Wireshark, tcpdump, FTP, nslookup, nmap  
 
----
+## 📌 Overview
 
-## 🔍 Project Overview
+This project simulates network-based attacks within a controlled virtual lab environment to demonstrate how packet captures (PCAPs) can be analyzed with Zeek and Wireshark. The focus is on identifying insecure protocols, extracting Indicators of Compromise (IOCs), and producing actionable insights in the context of security operations.
 
-This project simulates common network-based attacks within a virtual lab to demonstrate how network traffic can be captured, analyzed, and reported using Zeek and Wireshark. The lab highlights the importance of monitoring cleartext protocols and extracting Indicators of Compromise (IOCs) from PCAP files.
+The lab specifically captures and analyzes FTP login activity using cleartext credentials, highlighting the risks of using unencrypted communication protocols.
 
----
+## 🧪 Lab Configuration
 
-## 🧪 Lab Setup
+| Component     | Description                                |
+|--------------|--------------------------------------------|
+| Kali Linux    | Attacker + Network Monitor (Zeek, Wireshark) |
+| Windows 10    | Victim Machine with FTP Server              |
+| Network Type  | VirtualBox Host-Only (192.168.84.0/24)      |
+| Packet Capture| `tcpdump -i eth1 -w ftp_test.pcap`         |
 
-| Component      | Configuration                               |
-|----------------|---------------------------------------------|
-| Kali Linux     | Attacker and monitoring machine (Zeek, Wireshark) |
-| Windows 10     | Victim machine with FTP service enabled     |
-| Network Type   | Host-only VirtualBox adapter (192.168.84.0/24) |
-| Capture Method | `tcpdump -i eth1 -w ftp_test.pcap`          |
+## 🔍 Attack Simulation
 
----
+- Attacker initiates an FTP connection to the Windows 10 target.
+- Credentials used: `testuser` / `weakpass`
+- The login was captured in a `.pcap` file and then analyzed using Zeek.
 
-## ⚙️ Attack Simulation
+## 📊 Zeek Log Analysis
 
-- **FTP Login (Cleartext)**  
-  Attacker logs into Windows FTP service using fake credentials (`testuser / weakpass`).  
-  Captured via `tcpdump` and analyzed with Zeek.
+Zeek processed the PCAP and generated logs including:
 
-- **Zeek Analysis Output**  
-  Logs such as `conn.log`, `ftp.log`, `packet_filter.log` were generated.  
-  Credentials observed in plaintext.
+- `conn.log` – General connection metadata
+- `packet_filter.log` – Packet capture filtering details
+- (Optional) `ftp.log` – If FTP analyzer was activated manually
 
----
+Key observation: FTP credentials were visible in cleartext.
 
-## 📝 Key Findings
+## ⚠ Key Findings
 
-| Threat | Description |
-|--------|-------------|
-| **FTP Credential Exposure** | Username and password transmitted in plaintext |
-| **Mitre ATT&CK Mapping** | T1078 – Valid Accounts |
+| Threat                | Description                                                  |
+|-----------------------|--------------------------------------------------------------|
+| FTP Credential Leak   | FTP login details (user/pass) transmitted unencrypted        |
+| MITRE ATT&CK Mapping  | T1078 – Valid Accounts                                        |
+| Risk Impact           | Attackers could intercept credentials on flat networks       |
 
----
+## 📁 Repository Structure
 
-## 📂 Project Structure
+.
+├── docs/
+│ ├── final_zeek_intrusion_report.pdf # Technical report
+│ └── README.md # This file
+├── pcaps/
+│ ├── ftp_test.pcap
+│ ├── ftp_attack.pcap
+│ └── ...
+├── logs/
+│ ├── conn.log
+│ ├── dns.log
+│ ├── ssl.log
+│ └── ...
+
+
+## ✅ Outcomes
+
+- Successfully simulated a network-based attack
+- Captured evidence with `tcpdump`
+- Detected and analyzed behavior using Zeek logs
+- Produced a PDF report suitable for SOC analyst review or portfolio
+
+## 🏁 Future Improvements
+
+- Enable deeper logging via Zeek analyzers (e.g., full FTP analysis)
+- Simulate DNS tunneling or port scanning behaviors
+- Add automated Zeek scripts for threat correlation
+
+## 📚 License
+
+MIT License – see [LICENSE](LICENSE) if applicable.
+
+## 🔗 Tags
+
+`zeek` `network-analysis` `pcap` `intrusion-detection` `ftp` `cybersecurity` `soc` `tcpdump`
 
