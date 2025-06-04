@@ -59,9 +59,6 @@ Key observation: FTP credentials were visible in cleartext.
 - Simulate DNS tunneling or port scanning behaviors
 - Add automated Zeek scripts for threat correlation
 
-##  License
-
-MIT License – see [LICENSE](LICENSE) if applicable.
 
 ##  Tags
 
